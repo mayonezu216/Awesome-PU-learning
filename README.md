@@ -49,9 +49,9 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - <details><summary>Digest</summary>  In this paper, we rethink CPE for PU learning—can we remove the assumption to make CPE always valid? We show an affirmative answer by proposing Regrouping CPE (ReCPE) that builds an auxiliary probability distribution such that the support of the positive data distribution is never contained in the support of the negative data distribution. ReCPE can work with any CPE method by treating it as the base method. 
   
  - Positive-Unlabeled Learning with Adversarial Data Augmentation for Knowledge Graph Completion.[[paper]](https://arxiv.org/pdf/2205.00904)[[code]](https://link.zhihu.com/?target=https%3A//github.com/lilv98/PUDA-IJCAI22)
-  - Zhenwei Tang, Shichao Pei, Zhao Zhang, Yongchun Zhu, Fuzhen Zhuang, Robert Hoehndorf, Xiangliang Zhang. IJCAI 2022.
-  - Keywords: Adversarial Data Augmentation, Knowledge Graph Completion.
-  - <details><summary>Digest</summary> We propose positive-unlabeled learning with adversarial data augmentation (PUDA) for KGC. In particular, PUDA tailors positive-unlabeled risk estimator for the KGC task to deal with the false negative issue. Furthermore, to address the data sparsity issue, PUDA achieves a data augmentation strategy by unifying adversarial training and positive-unlabeled learning under the positive-unlabeled minimax game.
+   - Zhenwei Tang, Shichao Pei, Zhao Zhang, Yongchun Zhu, Fuzhen Zhuang, Robert Hoehndorf, Xiangliang Zhang. IJCAI 2022.
+   - Keywords: Adversarial Data Augmentation, Knowledge Graph Completion.
+   - <details><summary>Digest</summary> We propose positive-unlabeled learning with adversarial data augmentation (PUDA) for KGC. In particular, PUDA tailors positive-unlabeled risk estimator for the KGC task to deal with the false negative issue. Furthermore, to address the data sparsity issue, PUDA achieves a data augmentation strategy by unifying adversarial training and positive-unlabeled learning under the positive-unlabeled minimax game.
   
 - Positive Unlabeled Learning by Semi-Supervised Learning [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897738)
   - Zhuowei Wang, Jing Jiang, Guodong Long. IEEE ICIP 2022.
