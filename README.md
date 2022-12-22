@@ -4,7 +4,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
 # Table of Contents
 - PU-Learning Paper List
   - Survey
-  - ML Conference Paper
+  - ML Conference/Journal Paper
   - Application Paper in Medical Image Analysis
 
 # Paper List
@@ -87,6 +87,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Guangxin Su, Weitong Chen, Miao Xu. IJCAI 2021.
   -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consis- tent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expecta- tion, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
 
+- ARTA: Collection and Classification of Ambiguous Requests and Thoughtful Actions.
+  - Shohei Tanaka, Koichiro Yoshino, Katsuhito Sudoh, Satoshi Nakamura. ACL 2021.
+  - Keywords:  dialogue systems, dialogue agent, PU learning.
+  - <details><summary>Digest</summary> We collected a corpus and developed a model that classifies ambiguous user requests into corresponding system actions. In order to collect a high-quality corpus, we asked workers to input antecedent user requests whose pre-defined actions could be regarded as thoughtful. Although multiple actions could be identified as thoughtful for a single user request, annotating all combinations of user requests and system actions is impractical. For this reason, we fully annotated only the test data and left the annotation of the training data incomplete. In order to train the classification model on such training data, we applied the positive/unlabeled (PU) learning method, which assumes that only a part of the data is labeled with positive examples. 
+  
 - Object detection as a positive-unlabeled problem [[paper]](https://arxiv.org/pdf/2002.04672.pdf)
   - Y Yang, KJ Liang, L Carin. BMVC 2020.
   - Keywords: Label quality, object detection, pattern recognition. 
@@ -106,7 +111,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: variational PU (VPU) learning, Bayesian classifier.
   - <details><summary>Digest</summary> In this paper, we introduce a variational principle for PU learning that allows us to quantitatively evaluate the modeling error of the Bayesian classiﬁer directly from given data. This leads to a loss function which can be efﬁciently calculated without involving class prior estimation or any other intermediate estimation problems, and the variational learning method can then be employed to optimize the classiﬁer under general conditions. 
   
- - Learning from Positive and Unlabeled Data with Arbitrary Positive Shift
+ - Learning from Positive and Unlabeled Data with Arbitrary Positive Shift. [[paper]](https://proceedings.neurips.cc/paper/2020/file/98b297950041a42470269d56260243a1-Paper.pdf)
    - Zayd Hammoudeh, Daniel Lowd. NeurIPS 2020.
    - Keywords: Arbitrary positive shift, recursive risk estimator, PU risk estimation.
    -  <details><summary>Digest</summary> This paper shows that PU learning is possible even with arbitrarily non-representative positive data given unlabeled data from the source and target distributions. Our key insight is that only the negative class's distribution need be fixed. We integrate this into two statistically consistent methods to address arbitrary positive bias - one approach combines negative-unlabeled learning with unlabeled-unlabeled learning while the other uses a novel, recursive risk estimator.
@@ -121,6 +126,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: gradient based online learning, Online Positive and Unlabeled (OPU).
   - <details><summary>Digest</summary> This paper proposes a novel positive and unlabeled learning algorithm in an online training mode, which trains a classifier solely on the positive and unlabeled data arriving in a sequential order. Specifically, we adopt an unbiased estimate for the loss induced by the arriving positive or unlabeled examples at each time. Then we show that for any coming new single datum, the model can be updated independently and incrementally by gradient based online learning method. Furthermore, we extend our method to tackle the cases when more than one example is received at each time. 
   
+- Collective loss function for positive and unlabeled learning. [[paper]](https://arxiv.org/pdf/2005.03228.pdf)
+  - Chenhao Xie, Qiao Cheng, Jiaqing Liang, Lihan Chen, Yanghua Xiao. CoRR 2020.
+  - Keywords: Collectively loss, PU learning, cPU.
+  - <details><summary>Digest</summary> In this paper, we propose a Collectively loss function to learn from only Positive and Unlabeled data (cPU). We theoretically elicit the loss function from the setting of PU learning. 
+  
 - Positive and Unlabeled Learning with Label Disambiguation. [[paper]](https://www.ijcai.org/proceedings/2019/0590.pdf)
   - Chuang Zhang, Dexin Ren, Tongliang Liu, Jian Yang and Chen Gong. IJCAI 2019.
   - Keywords: Positive and Unlabeled (PU) learning, label disambiguation.
@@ -130,6 +140,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
    - Yu-Guan Hsieh, Gang Niu, Masashi Sugiyama. ICML 2019.
    - Keywords: Weighting algorithm, biased negative data, positive-unlabeled (PU) learning.
    - <details><summary>Digest</summary> This paper studies a novel classification framework which incorporates such biased N (bN) data in PU learning. We provide a method based on empirical risk minimization to address this PUbN classification problem. Our approach can be regarded as a novel example-weighting algorithm, with the weight of each example computed through a preliminary step that draws inspiration from PU learning. We also derive an estimation error bound for the proposed method. 
+  
+- Reconstruct & Crush Network. [[paper]](https://proceedings.neurips.cc/paper/2017/file/269d837afada308dd4aeab28ca2d57e4-Paper.pdf)
+  - Erinc Merdivan, Mohammad Reza Loghmani, Matthieu Geist. NIPS 2017.
+  - Keywords: energy-based model, Positive and Unlabeled (PU) learning, covariate shift, imbalanced data. 
+  - <details><summary>Digest</summary> This article introduces an energy-based model that is adversarial regarding data: it minimizes the energy for a given data distribution (the positive samples) while maximizing the energy for another given data distribution (the negative or unlabeled samples). The model is especially instantiated with autoencoders where the energy, represented by the reconstruction error, provides a general distance measure for unknown data. The resulting neural network thus learns to reconstruct data from the first distribution while crushing data from the second distribution. This solution can handle different problems such as Positive and Unlabeled (PU) learning or covariate shift, especially with imbalanced data. Using autoencoders allows handling a large variety of data, such as images, text or even dialogues. 
   
 - Towards Positive Unlabeled Learning for Parallel Data Mining: A Random Forest Framework [[paper]](https://www.researchgate.net/profile/Chen-Li-93/publication/269040485_Towards_Positive_Unlabeled_Learning_for_Parallel_Data_Mining_A_Random_Forest_Framework/links/54a9f99d0cf257a6360d5b7f/Towards-Positive-Unlabeled-Learning-for-Parallel-Data-Mining-A-Random-Forest-Framework.pdf)
   - Chen Li and Xue-Liang Hua. ADMA 2014.
