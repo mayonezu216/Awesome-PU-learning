@@ -25,13 +25,18 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   
 - Positive Unlabeled Learning by Semi-Supervised Learning [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897738)
   - Zhuowei Wang, Jing Jiang, Guodong Long. IEEE ICIP 2022.
-  - Keywords: Image classification, positive-Unlabeled Learning, semi-supervised learning.
+  - Keywords: Image Classification, Positive-Unlabeled Learning, Semi-Supervised Learning.
   - <details><summary>Digest</summary> formance degradation problem. To this end, we propose a novel SSL-based framework to tackle PU learning. Firstly, we introduce the dynamic increasing sampling strategy to progressively select both negative and positive samples from U data. Secondly, we adopt MixMatch to take full advantage of the unchosen samples in U data. Finally, we propose the Co-learning strategy that iteratively trains two independent networks with the selected samples to avoid the confirmation bias. 
 
 - Positive Unlabeled Learning with a Sequential Selection Bias. [[paper]](https://epubs.siam.org/doi/pdf/10.1137/1.9781611977172.3)
   - Walter Gerych, Tom Hartvigsen, Luke Buquicchio, Abdulaziz Alajaji, Kavin Chandrasekaran, Hamid Mansoor, Elke Rundensteiner, and Emmanuel Agu. SDM 2022.
   - Keywords: sequential bias, DeepSPU.
   - <details><summary>Digest</summary> In this work, we propose a novel solution to tackling this open sequential bias problem, called DeepSPU. DeepSPU recovers missing labels by constructing a model of the sequentially biased labeling process itself. This labeling model is then learned jointly with the prediction model that infers the missing labels in an iterative training process. Further, we regulate this training using a theoretically-justified cost functions that prevent our model from converging to incorrect but low-cost solution.
+  
+ - PULNS: Positive-Unlabeled Learning with Effective Negative Sample Selector.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/17064/16871)
+  - Chuan Luo, Pu Zhao, Chen Chen, Bo Qiao, Chao Du, Hongyu Zhang, Wei Wu, Shaowei Cai, Bing He, Saravanakumar Rajmohan and Qingwei Lin. 
+  - Keywords: Semi-Supervised Learning, Unsupervised & Self-Supervised Learning.
+  - <details><summary>Digest</summary>  In this paper, we propose a novel PU learning approach dubbed PULNS, equipped with an effective negative sample selector, which is optimized by reinforcement learning. Our PULNS approach employs an effective negative sample selector as the agent responsible for selecting negative samples from the unlabeled data. While the selected, likely negative samples can be used to improve the classifier, the performance of classifier is also used as the reward to improve the selector through the REINFORCE algorithm. By alternating the updates of the selector and the classifier, the performance of both is improved.
   
 - Mixture Proportion Estimation and PU Learning: A Modern Approach. [[paper]](https://proceedings.neurips.cc/paper/2021/file/47b4f1bfdf6d298682e610ad74b37dca-Paper.pdf)
   - Saurabh Garg, Yifan Wu, Alex Smola, Sivaraman Balakrishnan, Zachary C. Lipton. NeurIPS 2021.
