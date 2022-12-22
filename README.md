@@ -58,6 +58,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
    - Keywords: Adversarial Data Augmentation, Knowledge Graph Completion.
    - <details><summary>Digest</summary> We propose positive-unlabeled learning with adversarial data augmentation (PUDA) for KGC. In particular, PUDA tailors positive-unlabeled risk estimator for the KGC task to deal with the false negative issue. Furthermore, to address the data sparsity issue, PUDA achieves a data augmentation strategy by unifying adversarial training and positive-unlabeled learning under the positive-unlabeled minimax game.
   
+- Recovering The Propensity Score From Biased Positive Unlabeled Data. [[paper]](https://www.aaai.org/AAAI22Papers/AAAI-12934.GerychW.pdf)
+  -  Gerych W, Hartvigsen T, Buquicchio L, et al. AAAI 2022.
+  - Keywords: biased distribution, propensity score.
+  - In this work, we propose two sets of assumptions under which the propensity score can be uniquely determined: one in which no assumption is made on the functional form of the propensity score (requiring assumptions on the data distribution), and the second which loosens the data assumptions while assuming a functional form for the propensity score. We then propose inference strategies for each case.
+  
 - Unifying Knowledge Base Completion with PU Learning to Mitigate the Observation Bias.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/20332/20091)
   - Jonas Schouterden, Jessa Bekker, Jesse Davis, Hendrik Blockeel. AAAI 2022.
   - Keywords: Data Mining & Knowledge Management (DMKM), Machine Learning (ML).
@@ -272,6 +277,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: energy-based model, Positive and Unlabeled (PU) learning, covariate shift, imbalanced data. 
   - <details><summary>Digest</summary> This article introduces an energy-based model that is adversarial regarding data: it minimizes the energy for a given data distribution (the positive samples) while maximizing the energy for another given data distribution (the negative or unlabeled samples). The model is especially instantiated with autoencoders where the energy, represented by the reconstruction error, provides a general distance measure for unknown data. The resulting neural network thus learns to reconstruct data from the first distribution while crushing data from the second distribution. This solution can handle different problems such as Positive and Unlabeled (PU) learning or covariate shift, especially with imbalanced data. Using autoencoders allows handling a large variety of data, such as images, text or even dialogues. 
   
+- Multi-Positive and Unlabeled Learning.[[paper]](https://www.ijcai.org/proceedings/2017/0444.pdf)
+  - Yixing Xu, Chang Xu, Chao Xu, Dacheng Tao. IJCAI 2017.
+  - Keywords:  multi-class model.
+  - <details><summary> Digest</summary> Here we propose a one-step method that directly enables multi-class model to be trained using the given input multi-class data and that predicts the label based on the model decision. Specifically, we construct different convex loss functions for labeled and unlabeled data to learn a discriminant function F. 
+  
 - Recovering True Classifier Performance in Positive-Unlabeled Learning.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/10937/10796)
   - Shantanu Jain, Martha White, Predrag Radivojac. AAAI 2017.
   - Keywords: ROC curve, AUC, Precision Recall curve, asymmetric noise, positive unlabeled learning, class prior estimation.
@@ -281,6 +291,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Tomoya Sakai, Gang Niu & Masashi Sugiyama. Machine Learning 2017.
   - Keywords: AUC optimization, Semi-supervised learning, positive-unlabeled learning.
   - <details><summary> Digest</summary> In this paper, we propose a novel semi-supervised AUC optimization method that does not require such restrictive assumptions. We first develop an AUC optimization method based only on positive and unlabeled data and then extend it to semi-supervised learning by combining it with a supervised AUC optimization method. 
+ 
   
 - Towards Positive Unlabeled Learning for Parallel Data Mining: A Random Forest Framework [[paper]](https://www.researchgate.net/profile/Chen-Li-93/publication/269040485_Towards_Positive_Unlabeled_Learning_for_Parallel_Data_Mining_A_Random_Forest_Framework/links/54a9f99d0cf257a6360d5b7f/Towards-Positive-Unlabeled-Learning-for-Parallel-Data-Mining-A-Random-Forest-Framework.pdf)
   - Chen Li and Xue-Liang Hua. ADMA 2014.
