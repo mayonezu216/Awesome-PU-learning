@@ -14,9 +14,14 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: Classification, Weakly supervised learning, PU learning.
   - <details><summary>Digest</summary> This article provides a survey of the current state of the art in PU learning. It proposes seven key research questions that commonly arise in this field and provides a broad overview of how the field has tried to address them.
   
-- 
+
 
 ## ML Conference Paper
+
+- Rethinking Class-Prior Estimation for Positive-Unlabeled Learning. [[paper]](https://openreview.net/pdf?id=aYAA-XHKyk)
+  - Yu Yao, Tongliang Liu, Bo Han, Mingming Gong, Gang Niu, Masashi Sugiyama, Dacheng Tao. ICLR 2022.
+  - Keywords: Class-prior estimation, positive-unlabeled learning.
+  - <details><summary>Digest</summary>  In this paper, we rethink CPE for PU learning—can we remove the assumption to make CPE always valid? We show an affirmative answer by proposing Regrouping CPE (ReCPE) that builds an auxiliary probability distribution such that the support of the positive data distribution is never contained in the support of the negative data distribution. ReCPE can work with any CPE method by treating it as the base method. 
   
 - Positive Unlabeled Learning by Semi-Supervised Learning [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897738)
   - Zhuowei Wang, Jing Jiang, Guodong Long. IEEE ICIP 2022.
