@@ -48,6 +48,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: Class-prior estimation, positive-unlabeled learning.
   - <details><summary>Digest</summary>  In this paper, we rethink CPE for PU learning—can we remove the assumption to make CPE always valid? We show an affirmative answer by proposing Regrouping CPE (ReCPE) that builds an auxiliary probability distribution such that the support of the positive data distribution is never contained in the support of the negative data distribution. ReCPE can work with any CPE method by treating it as the base method. 
   
+ - Positive-Unlabeled Learning with Adversarial Data Augmentation for Knowledge Graph Completion.[[paper]](https://arxiv.org/pdf/2205.00904)[[code]](https://link.zhihu.com/?target=https%3A//github.com/lilv98/PUDA-IJCAI22)
+  - Zhenwei Tang, Shichao Pei, Zhao Zhang, Yongchun Zhu, Fuzhen Zhuang, Robert Hoehndorf, Xiangliang Zhang. IJCAI 2022.
+  - Keywords: Adversarial Data Augmentation, Knowledge Graph Completion.
+  - <details><summary>Digest</summary> We propose positive-unlabeled learning with adversarial data augmentation (PUDA) for KGC. In particular, PUDA tailors positive-unlabeled risk estimator for the KGC task to deal with the false negative issue. Furthermore, to address the data sparsity issue, PUDA achieves a data augmentation strategy by unifying adversarial training and positive-unlabeled learning under the positive-unlabeled minimax game.
+  
 - Positive Unlabeled Learning by Semi-Supervised Learning [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897738)
   - Zhuowei Wang, Jing Jiang, Guodong Long. IEEE ICIP 2022.
   - Keywords: Image Classification, Positive-Unlabeled Learning, Semi-Supervised Learning.
@@ -120,7 +125,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Chen Gong, Hong Shi, Tongliang Liu, Chuang Zhang, Jian Yang and Dacheng Tao. IEEE Transactions on Pattern Analysis and Machine Intelligence 2021.
   - Keywords: Positive and Unlabeled learning, Loss Decomposition and Centroid Estimation (LDCE), Kernelized LDCE (KLDCE).
   - <details><summary>Digest</summary> we propose a novel PU learning algorithm dubbed “Loss Decomposition and Centroid Estimation” (LDCE). By decomposing the loss function of corrupted negative examples into two parts, we show that only the second part is affected by the noisy labels. Thereby, we may estimate the centroid of corrupted negative set via an unbiased way to reduce the adverse impact of such label noise. Furthermore, we propose the “Kernelized LDCE” (KLDCE) by introducing the kernel trick, and show that KLDCE can be easily solved by combining Alternative Convex Search (ACS) and Sequential Minimal Optimization (SMO). Theoretically, we derive the generalization error bound which suggests that the generalization risk of our model converges to the empirical risk with the order of O(1= k + 1= n k+ 1=%/n) (n and k are the amounts of training data and positive data correspondingly). 
-  
+
+- Beyond the Selected Completely at Random Assumption for Learning from Positive and Unlabeled Data.[[paper]](https://link.springer.com/content/pdf/10.1007/978-3-030-46147-8.pdf?pdf=button)
+  - Jessa Bekker, Pieter Robberechts & Jesse Davis. ECML PKDD 2019.
+  - Keywords: PU learning, Unlabeled data, Classification.
+  - <details><summary>Digest</summary> We propose and theoretically analyze an empirical-risk-based method for incorporating the labeling mechanism. Additionally, we investigate under which assumptions learning is possible when the labeling mechanism is not fully understood and propose a practical method to enable this. 
   
 - Object detection as a positive-unlabeled problem [[paper]](https://arxiv.org/pdf/2002.04672.pdf)
   - Y Yang, KJ Liang, L Carin. BMVC 2020.
@@ -192,28 +201,62 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: Large-margin Label-calibrated Support Vector Machines (LLSVM), Positive and Unlabeled Learning.
   - <details><summary>Digest</summary> In this paper, we argue that the clusters formed by positive examples and potential negative examples in the feature space should be critically utilized to establish the PU learning model, especially when the negative data are not explicitly available. To this end, we introduce a hat loss to discover the margin between data clusters, a label calibration regularizer to amend the biased decision boundary to the potentially correct one, and propose a novel discriminative PU classifier termed “Large-margin Label-calibrated Support Vector Machines” (LLSVM). Our LLSVM classifier can work properly in the absence of negative training examples and effectively achieve the max-margin effect between positive and negative classes.
   
-  
+- Estimating the Class Prior in Positive and Unlabeled Data Through Decision Tree Induction. [[paper]](
+  https://ojs.aaai.org/index.php/AAAI/article/view/11715/11574)
+  - Jessa Bekker, Jesse Davis. AAAI 2018.
+  - Keywords: Decision Tree Induction, Class Prior Estimation, Positive and Unlabeled Data.
+  -  <details><summary>Digest</summary> In this paper, we propose a simple yet effective method for estimating the class prior, by estimating the probability that a positive example is selected to be labeled. Our key insight is that subdomains of the data give a lower bound on this probability. This lower bound gets closer to the real probability as the ratio of labeled examples increases. Finding such subsets can naturally be done via top-down decision tree induction. 
   
 - Margin Based PU Learning.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/11698/11557)
   - Tieliang Gong, Guangtao Wang, Jieping Ye, Zongben Xu and Ming Lin. AAAI 2018.
   - Keywords: PU Learning, Generalization error, Classification.
   -  <details><summary>Digest</summary>  In this work, we show that not all margin-based heuristic rules are able to improve the learned classifiers iteratively. We find that a so-called large positive margin oracle is necessary to guarantee the success of PU learning. Under this oracle, a provable positive-margin based PU learning algorithm is proposed for linear regression and classification under the truncated Gaussian distributions. The proposed algorithm is able to reduce the recovering error geometrically proportional to the positive margin. 
 
+- fBGD: Learning Embeddings From Positive Unlabeled Data with BGD. 
+  - Fajie Yuan, Xin Xin, Xiangnan He, Guibing Guo, Weinan Zhang, Chua Tat-Seng and Joemon M. Jose. 2018.
+  - Keywords: fast and generic batch gradient descent optimizer (fBGD).
+  -  <details><summary>Digest</summary> We present a fast and generic batch gradient descent optimizer (fBGD) to learn from all training examples without sampling. By leveraging sparsity in PU data, we accelerate fBGD by several magnitudes, making its time complexity the same level as the NS-based stochastic gradient descent method. Meanwhile, we observe that the standard batch gradient method suffers from gradient instability issues due to the sparsity property.
+  
+- Semi-Supervised Classification Based on Classification from Positive and Unlabeled Data.[[paper]](http://proceedings.mlr.press/v70/sakai17a/sakai17a.pdf)
+  - Tomoya Sakai, Marthinus Christoffel Plessis, Gang Niu, Masashi Sugiyama. ICML 2017.
+  - Keywords: classification, Semi-supervised learning.
+  - <details><summary>Digest</summary> In this paper, we extend PU classification to also incorporate negative data and propose a novel semi-supervised learning approach. We establish generalization error bounds for our novel methods and show that the bounds decrease with respect to the number of unlabeled data without the distributional assumptions that are required in existing semi-supervised learning methods. 
 
+- Positive-Unlabeled Learning with Non-Negative Risk Estimator.[[paper]](https://proceedings.neurips.cc/paper/2017/file/7cce53cf90577442771720a370c3c723-Paper.pdf)
+  - Ryuichi Kiryo, Gang Niu, Marthinus C. du Plessis, Masashi Sugiyama. NIPS 2017.
+  - Keywords: Non-Negative Risk Estimator, Positive-Unlabeled Learning, overfitting.
+  - <details><summary>Digest</summary> In this paper, we propose a non-negative risk estimator for PU learning: when getting minimized, it is more robust against overfitting, and thus we are able to use very flexible models (such as deep neural networks) given limited P data. Moreover, we analyze the bias, consistency, and mean-squared-error reduction of the proposed risk estimator, and bound the estimation error of the resulting empirical risk minimizer.
+  
 - Reconstruct & Crush Network. [[paper]](https://proceedings.neurips.cc/paper/2017/file/269d837afada308dd4aeab28ca2d57e4-Paper.pdf)
   - Erinc Merdivan, Mohammad Reza Loghmani, Matthieu Geist. NIPS 2017.
   - Keywords: energy-based model, Positive and Unlabeled (PU) learning, covariate shift, imbalanced data. 
   - <details><summary>Digest</summary> This article introduces an energy-based model that is adversarial regarding data: it minimizes the energy for a given data distribution (the positive samples) while maximizing the energy for another given data distribution (the negative or unlabeled samples). The model is especially instantiated with autoencoders where the energy, represented by the reconstruction error, provides a general distance measure for unknown data. The resulting neural network thus learns to reconstruct data from the first distribution while crushing data from the second distribution. This solution can handle different problems such as Positive and Unlabeled (PU) learning or covariate shift, especially with imbalanced data. Using autoencoders allows handling a large variety of data, such as images, text or even dialogues. 
+  
+- Semi-supervised AUC optimization based on positive-unlabeled learning.[[paper]](https://link.springer.com/content/pdf/10.1007/s10994-017-5678-9.pdf?pdf=button)
+  - Tomoya Sakai, Gang Niu & Masashi Sugiyama. Machine Learning 2017.
+  - Keywords: AUC optimization, Semi-supervised learning, positive-unlabeled learning.
+  - <details><summary> Digest</summary> In this paper, we propose a novel semi-supervised AUC optimization method that does not require such restrictive assumptions. We first develop an AUC optimization method based only on positive and unlabeled data and then extend it to semi-supervised learning by combining it with a supervised AUC optimization method. 
   
 - Towards Positive Unlabeled Learning for Parallel Data Mining: A Random Forest Framework [[paper]](https://www.researchgate.net/profile/Chen-Li-93/publication/269040485_Towards_Positive_Unlabeled_Learning_for_Parallel_Data_Mining_A_Random_Forest_Framework/links/54a9f99d0cf257a6360d5b7f/Towards-Positive-Unlabeled-Learning-for-Parallel-Data-Mining-A-Random-Forest-Framework.pdf)
   - Chen Li and Xue-Liang Hua. ADMA 2014.
   - Keywords: PU information gain, PU Gini index, random forest, parallel data mining.
   - <details><summary>Digest</summary> We investigate widely used Positive and Unlabeled (PU) learning algorithms including PU information gain and a newly developed PU Gini index combining with popular parallel computing framework - Random Forest (RF), thereby enabling parallel data mining to learn from only positive and unlabeled samples. The proposed framework, termed PURF (Positive Un- labeled Random Forest), is able to learn from positive and unlabeled instances and achieve comparable classifcation performance with RF trained by fully la- beled data through parallel computing according to experiments on both synthetic and real-world UCI datasets. 
   
+- A bagging SVM to learn from positive and unlabeled examples. [[paper]](https://www.sciencedirect.com/science/article/pii/S0167865513002432/pdfft?md5=4e9937f1cc1315c94b40e9122b83bc54&pid=1-s2.0-S0167865513002432-main.pdf)
+  - F.Mordelet, J.-P.Vert. Pattern Recognition Letters 2014.
+  - Keywords: PU bagging.
+  - <details><summary>Digest</summary> We propose a new method for PU learning with a conceptually simple implementation based on bootstrap aggregating (bagging) techniques: the algorithm iteratively trains many binary classifiers to discriminate the known positive examples from random subsamples of the unlabeled set, and averages their predictions.
+  
+  
 - Distributional Similarity vs. PU Learning for Entity Set Expansion. [[paper]](https://aclanthology.org/P10-2066.pdf)
   - Xiao-Li Li, Lei Zhang, Bing Liu, See-Kiong Ng. ACL 2010.
   - Keywords: Distributional Similarity, PU Learning, Entity Set Expansion.
   - <details><summary>Digest</summary> Distributional similarity is a classic tech- nique for entity set expansion, where the system is given a set of seed entities of a particular class, and is asked to expand the set using a corpus to obtain more entities of the same class as represented by the seeds. This paper shows that a machine learning model called positive and unlabeled learning (PU learning) can model the set expansion problem better.
+  
+- Learning from Positive and Unlabeled Examples with Different Data Distributions.[[paper]](https://link.springer.com/content/pdf/10.1007/11564096_24.pdf?pdf=inline%20link)
+  - Xiao-Li Li and Bing Liu. ECML 2005.
+  - Keywords: Different Data Distributions, A-EM.
+  - <details><summary>Digest</summary> We study the problem of learning from positive and unlabeled examples. Although several techniques exist for dealing with this problem, they all assume that positive examples in the positive set P and the positive examples in the unlabeled set U are generated from the same distribution. This assumption may be violated in practice. This paper proposes a novel technique A-EM to deal with the problem. Experiment results with product page classification demonstrate the effectiveness of the proposed technique.
   
 ## Application Paper in Medical Image Analysis
 
