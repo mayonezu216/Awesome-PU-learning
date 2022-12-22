@@ -58,6 +58,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Changchun Li, Ximing Li, Lei Feng, Jihong Ouyang. ICLR 2022.
   - Keywords: Positive and Unlabeled Learning, Mixup, Heuristic.
   - <details><summary>Digest</summary> In this paper, we propose a novel PU learning method, namely Positive and unlabeled learning with Partially Positive Mixup (P3Mix), which simultaneously benefits from data augmentation and supervision correction with a heuristic mixup technique. To be specific, we take inspiration from the directional boundary deviation phenomenon observed in our preliminary experiments, where the learned PU boundary tends to deviate from the fully supervised boundary towards the positive side. For the unlabeled instances with ambiguous predictive results, we select their mixup partners from the positive instances around the learned PU boundary, so as to transform them into augmented instances near to the boundary yet with more precise supervision. Accordingly, those augmented instances may push the learned PU boundary towards the fully supervised boundary, thereby improving the classification performance. 
+  
+- Positive-Unlabeled Data Purification in the Wild for Object Detection.[[paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Guo_Positive-Unlabeled_Data_Purification_in_the_Wild_for_Object_Detection_CVPR_2021_paper.pdf)
+  - Jianyuan Guo, Kai Han, Han Wu, Chao Zhang, Xinghao Chen, Chunjing Xu, Chang Xu, Yunhe Wang. CVPR 2021.
+  - Keywords: Data Purification, Object Detection, positive-unlabeled learning.
+  - <details><summary>Digest</summary> In this paper, we present a positive-unlabeled learning based scheme to expand training data by purifying valuable images from massive unlabeled ones, where the original training data are viewed as positive data and the unlabeled images in the wild are unlabeled data. To effectively utilized these purified data, we propose a self-distillation algorithm based on hint learning and ground truth bounded knowledge distillation.
 
 - Predictive Adversarial Learning from Positive and Unlabeled Data. [[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/16953/16760)
   - Wenpeng Hu, Ran Le, Bing Liu, Feng Ji, Jinwen Ma, Dongyan Zhao and Rui Yan. AAAI 2021.
@@ -79,6 +84,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: Positive-unlabeled learning, asymmetric loss, deep neural networks.
   - <details><summary>Digest</summary> For the situation with selection bias on the labeled samples, we propose a heuristic method to automatically choose the hyper-parameter according to the class prior on the training data. Compared with previous approaches, our method only requires a slight modification of the conventional cross-entropy loss and is compatible with various deep neural networks in an end-to-end way. 
 
+- PUNet: Temporal Action Proposal Generation With Positive Unlabeled Learning Using Key Frame Annotations. [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506012)[[code]](https://github.com/NoorZia/punet)
+  - Noor Ul Sehr Zia; Osman Semih Kayhan; Jan van Gemert. IEEE ICIP 2021.
+  - Keywords: PUNet, Temporal Action Proposal Generation, Key Frame Annotations, Positive Unlabeled Learning.
+  - <details><summary>Digest</summary>  To tackle the class imbalance by using only a single frame, we evaluate an extremely simple Positive-Unlabeled algorithm (PU-learning). We demonstrate on THUMOS’14 and ActivityNet that using a single key frame label give good results while being significantly faster to annotate. In addition, we show that our simple method, PUNet, is data-efficient which further reduces the need for expensive annotations. 
+  
  - Positive-Unlabeled Learning from Imbalanced Data [[paper]](https://www.ijcai.org/proceedings/2021/0412.pdf)
    - Guangxin Su, Weitong Chen, Miao Xu. IJCAI 2021.
    -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consis- tent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expecta- tion, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
@@ -122,10 +132,20 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: gradient based online learning, Online Positive and Unlabeled (OPU).
   - <details><summary>Digest</summary> This paper proposes a novel positive and unlabeled learning algorithm in an online training mode, which trains a classifier solely on the positive and unlabeled data arriving in a sequential order. Specifically, we adopt an unbiased estimate for the loss induced by the arriving positive or unlabeled examples at each time. Then we show that for any coming new single datum, the model can be updated independently and incrementally by gradient based online learning method. Furthermore, we extend our method to tackle the cases when more than one example is received at each time. 
   
+- Positive Unlabeled Learning with Class-prior Approximation.[[paper]](https://www.ijcai.org/Proceedings/2020/0279.pdf)
+  - Shizhen Chang, Bo Du and Liangpei Zhang. IJCAI 2020.
+  - Keywords: Positive Unlabeled Learning, Class-prior Approximation, empirical unbiased risk.
+  -  <details><summary>Digest</summary> In this paper, we formulate a convex formulation to jointly solve the class-prior unknown problem and train an accurate classifier with no need of any class-prior assumptions or additional negative samples. The class prior is estimated by pursuing the optimal solution of gradient thresholding and the classifier is simultaneously trained by performing empirical unbiased risk.
+  
 - Collective loss function for positive and unlabeled learning. [[paper]](https://arxiv.org/pdf/2005.03228.pdf)
   - Chenhao Xie, Qiao Cheng, Jiaqing Liang, Lihan Chen, Yanghua Xiao. CoRR 2020.
   - Keywords: Collectively loss, PU learning, cPU.
   - <details><summary>Digest</summary> In this paper, we propose a Collectively loss function to learn from only Positive and Unlabeled data (cPU). We theoretically elicit the loss function from the setting of PU learning. 
+
+- Principled analytic classifier for positive-unlabeled learning via weighted integral probability metric. [[paper]](https://link.springer.com/content/pdf/10.1007/s10994-019-05836-9.pdf?pdf=button)
+  - Yongchan Kwon, Wonyoung Kim, Masashi Sugiyama & Myunghee Cho Paik. Machine Learning 2020.
+  - Keywords: Principled analytic classifier, positive-unlabeled learning, weighted integral probability metric.
+  -  <details><summary>Digest</summary>  In this paper, we propose a computationally efficient and theoretically grounded PU learning algorithm. The proposed PU learning algorithm produces a closed-form classifier when the hypothesis space is a closed ball in reproducing kernel Hilbert space. In addition, we establish upper bounds of the estimation error and the excess risk. The obtained estimation error bound is sharper than existing results and the derived excess risk bound has an explicit form, which vanishes as sample sizes increase. 
   
 - Positive and Unlabeled Learning with Label Disambiguation. [[paper]](https://www.ijcai.org/proceedings/2019/0590.pdf)
   - Chuang Zhang, Dexin Ren, Tongliang Liu, Jian Yang and Chen Gong. IJCAI 2019.
@@ -137,6 +157,12 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
    - Keywords: Weighting algorithm, biased negative data, positive-unlabeled (PU) learning.
    - <details><summary>Digest</summary> This paper studies a novel classification framework which incorporates such biased N (bN) data in PU learning. We provide a method based on empirical risk minimization to address this PUbN classification problem. Our approach can be regarded as a novel example-weighting algorithm, with the weight of each example computed through a preliminary step that draws inspiration from PU learning. We also derive an estimation error bound for the proposed method. 
   
+- Margin Based PU Learning.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/11698/11557)
+  - Tieliang Gong, Guangtao Wang, Jieping Ye, Zongben Xu and Ming Lin. AAAI 2018.
+  - Keywords: PU Learning, Generalization error, Classification.
+  -  <details><summary>Digest</summary>  In this work, we show that not all margin-based heuristic rules are able to improve the learned classifiers iteratively. We find that a so-called large positive margin oracle is necessary to guarantee the success of PU learning. Under this oracle, a provable positive-margin based PU learning algorithm is proposed for linear regression and classification under the truncated Gaussian distributions. The proposed algorithm is able to reduce the recovering error geometrically proportional to the positive margin. 
+
+
 - Reconstruct & Crush Network. [[paper]](https://proceedings.neurips.cc/paper/2017/file/269d837afada308dd4aeab28ca2d57e4-Paper.pdf)
   - Erinc Merdivan, Mohammad Reza Loghmani, Matthieu Geist. NIPS 2017.
   - Keywords: energy-based model, Positive and Unlabeled (PU) learning, covariate shift, imbalanced data. 
@@ -147,7 +173,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: PU information gain, PU Gini index, random forest, parallel data mining.
   - <details><summary>Digest</summary> We investigate widely used Positive and Unlabeled (PU) learning algorithms including PU information gain and a newly developed PU Gini index combining with popular parallel computing framework - Random Forest (RF), thereby enabling parallel data mining to learn from only positive and unlabeled samples. The proposed framework, termed PURF (Positive Un- labeled Random Forest), is able to learn from positive and unlabeled instances and achieve comparable classifcation performance with RF trained by fully la- beled data through parallel computing according to experiments on both synthetic and real-world UCI datasets. 
   
-  
+- Distributional Similarity vs. PU Learning for Entity Set Expansion. [[paper]](https://aclanthology.org/P10-2066.pdf)
+  - Xiao-Li Li, Lei Zhang, Bing Liu, See-Kiong Ng. ACL 2010.
+  - Keywords: Distributional Similarity, PU Learning, Entity Set Expansion.
+  - <details><summary>Digest</summary> 
+Distributional similarity is a classic tech- nique for entity set expansion, where the system is given a set of seed entities of a particular class, and is asked to expand the set using a corpus to obtain more entities of the same class as represented by the seeds. This paper shows that a machine learning model called positive and unlabeled learning (PU learning) can model the set expansion problem better.
   
 ## Application Paper in Medical Image Analysis
   
