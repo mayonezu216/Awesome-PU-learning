@@ -16,7 +16,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   
 
 
-## ML Conference Paper
+## ML Conference/Journal Paper
 
 - Rethinking Class-Prior Estimation for Positive-Unlabeled Learning. [[paper]](https://openreview.net/pdf?id=aYAA-XHKyk)
   - Yu Yao, Tongliang Liu, Bo Han, Mingming Gong, Gang Niu, Masashi Sugiyama, Dacheng Tao. ICLR 2022.
@@ -33,8 +33,18 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: sequential bias, DeepSPU.
   - <details><summary>Digest</summary> In this work, we propose a novel solution to tackling this open sequential bias problem, called DeepSPU. DeepSPU recovers missing labels by constructing a model of the sequentially biased labeling process itself. This labeling model is then learned jointly with the prediction model that infers the missing labels in an iterative training process. Further, we regulate this training using a theoretically-justified cost functions that prevent our model from converging to incorrect but low-cost solution.
   
+- Graph-based PU learning for binary and multiclass classification without class prior.  [[paper]](https://link.springer.com/content/pdf/10.1007/s10115-022-01702-8.pdf?pdf=button)
+  - Jaemin Yoo, Junghun Kim, Hoyoung Yoon, Geonsoo Kim, Changwon Jang & U Kang. Knowledge and Information Systems 2022.
+  - Keywords: Graph-based PU Learning, Risk Minimization, IterAtive Belief Propagation.
+  - <details><summary>Digest</summary> In this work, we propose GRAB (Graph-based Risk minimization with iterAtive Belief propagation), a novel end-to-end approach for graph-based PU learning that requires no class prior. GRAB runs marginalization and update steps iteratively. The marginalization step models the given graph as a Markov network and estimates the marginals of latent variables. The update step trains the binary classifier by utilizing the computed marginals in the objective function. We then generalize GRAB to multi-positive unlabeled (MPU) learning, where multiple positive classes exist in a dataset. 
+  
+- Who Is Your Right Mixup Partner in Positive and Unlabeled Learning. [[paper]](https://openreview.net/pdf?id=NH29920YEmj)
+  - Changchun Li, Ximing Li, Lei Feng, Jihong Ouyang. ICLR 2022.
+  - Keywords: Positive and Unlabeled Learning, Mixup, Heuristic.
+  - <details><summary>Digest</summary> In this paper, we propose a novel PU learning method, namely Positive and unlabeled learning with Partially Positive Mixup (P3Mix), which simultaneously benefits from data augmentation and supervision correction with a heuristic mixup technique. To be specific, we take inspiration from the directional boundary deviation phenomenon observed in our preliminary experiments, where the learned PU boundary tends to deviate from the fully supervised boundary towards the positive side. For the unlabeled instances with ambiguous predictive results, we select their mixup partners from the positive instances around the learned PU boundary, so as to transform them into augmented instances near to the boundary yet with more precise supervision. Accordingly, those augmented instances may push the learned PU boundary towards the fully supervised boundary, thereby improving the classification performance. 
+  
  - PULNS: Positive-Unlabeled Learning with Effective Negative Sample Selector.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/17064/16871)
-   - Chuan Luo, Pu Zhao, Chen Chen, Bo Qiao, Chao Du, Hongyu Zhang, Wei Wu, Shaowei Cai, Bing He, Saravanakumar Rajmohan and Qingwei Lin. 
+   - Chuan Luo, Pu Zhao, Chen Chen, Bo Qiao, Chao Du, Hongyu Zhang, Wei Wu, Shaowei Cai, Bing He, Saravanakumar Rajmohan and Qingwei Lin. AAAI 2021.
    - Keywords: Semi-Supervised Learning, Unsupervised & Self-Supervised Learning.
    - <details><summary>Digest</summary>  In this paper, we propose a novel PU learning approach dubbed PULNS, equipped with an effective negative sample selector, which is optimized by reinforcement learning. Our PULNS approach employs an effective negative sample selector as the agent responsible for selecting negative samples from the unlabeled data. While the selected, likely negative samples can be used to improve the classifier, the performance of classifier is also used as the reward to improve the selector through the REINFORCE algorithm. By alternating the updates of the selector and the classifier, the performance of both is improved.
   
