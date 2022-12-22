@@ -202,6 +202,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: multi-class PU learning, unbiased risk estimator, alternative risk estimator.
   - <details><summary>Digest</summary> In this paper, we present an unbiased estimator of the original classification risk for multi-class PU learning, and show that the direct empirical risk minimization suffers from the severe overfitting problem because the risk is unbounded below. To address this problem, we propose an alternative risk estimator, and theoretically establish an estimation error bound. We show that the estimation error of its empirical risk minimizer achieves the optimal parametric convergence rate. 
   
+- Centroid Estimation With Guaranteed Efficiency: A General Framework for Weakly Supervised Learning. [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9294086)
+  - Chen Gong; Jian Yang; Jane You; Masashi Sugiyama.  IEEE Transactions on Pattern Analysis and Machine Intelligence 2020.
+  - Keywords: Estimation, Supervised learning, Fasteners, Training data, Support vector machines, Semisupervised learning, Safety.
+  - <details><summary>Digest</summary> In this paper, we propose a general framework termed centroid estimation with guaranteed efficiency (CEGE) for weakly supervised learning (WSL) with incomplete, inexact, and inaccurate supervision.  The core of our framework is to devise an unbiased and statistically efficient risk estimator that is applicable to various weak supervision. 
+  
 - Collective loss function for positive and unlabeled learning. [[paper]](https://arxiv.org/pdf/2005.03228.pdf)
   - Chenhao Xie, Qiao Cheng, Jiaqing Liang, Lihan Chen, Yanghua Xiao. CoRR 2020.
   - Keywords: Collectively loss, PU learning, cPU.
@@ -293,7 +298,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Tomoya Sakai, Gang Niu & Masashi Sugiyama. Machine Learning 2017.
   - Keywords: AUC optimization, Semi-supervised learning, positive-unlabeled learning.
   - <details><summary> Digest</summary> In this paper, we propose a novel semi-supervised AUC optimization method that does not require such restrictive assumptions. We first develop an AUC optimization method based only on positive and unlabeled data and then extend it to semi-supervised learning by combining it with a supervised AUC optimization method. 
- 
+
+- Convex Formulation for Learning from Positive and Unlabeled Data.[[paper]](http://proceedings.mlr.press/v37/plessis15.pdf)
+  - Marthinus Du Plessis, Gang Niu, Masashi Sugiyama. ICML 2015.
+  - Keywords: convex formulation, double hinge loss. 
+  - <details><summary>Digest</summary> In this paper, we discuss a convex formulation for PU classification that can still cancel the bias. The key idea is to use different loss functions for positive and unlabeled samples. However, in this setup, the hinge loss is not permissible. As an alternative, we propose the double hinge loss. 
   
 - Towards Positive Unlabeled Learning for Parallel Data Mining: A Random Forest Framework [[paper]](https://www.researchgate.net/profile/Chen-Li-93/publication/269040485_Towards_Positive_Unlabeled_Learning_for_Parallel_Data_Mining_A_Random_Forest_Framework/links/54a9f99d0cf257a6360d5b7f/Towards-Positive-Unlabeled-Learning-for-Parallel-Data-Mining-A-Random-Forest-Framework.pdf)
   - Chen Li and Xue-Liang Hua. ADMA 2014.
