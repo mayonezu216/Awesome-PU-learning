@@ -10,9 +10,9 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
 # Paper List
 ## Survey
 - A Recent Survey on Instance-Dependent Positive and Unlabeled Learning. [[paper]](https://gcatnjust.github.io/ChenGong/paper/gong_frme22.pdf)
-- Chen Gong, Muhammad Imran Zulfiqar, Chuang Zhang, Shahid Mahmood, Jian Yang. Fundamental Research 2022.
-- Keywords: Instance-dependent positive and unlabeled learning, Weakly supervised learning, Label noise learning, Cost-sensitive learning.
--  <details><summary>Digest</summary> In this survey, we first present the preliminary knowledge of PU learning, and then review the representative instance-dependent PU learning settings and methods. After that, we thoroughly compare them with typical PU learning methods on various benchmark datasets and analyze their performances. Finally, we discuss the potential directions for future research.
+  - Chen Gong, Muhammad Imran Zulfiqar, Chuang Zhang, Shahid Mahmood, Jian Yang. Fundamental Research 2022.
+  - Keywords: Instance-dependent positive and unlabeled learning, Weakly supervised learning, Label noise learning, Cost-sensitive learning.
+  -  <details><summary>Digest</summary> In this survey, we first present the preliminary knowledge of PU learning, and then review the representative instance-dependent PU learning settings and methods. After that, we thoroughly compare them with typical PU learning methods on various benchmark datasets and analyze their performances. Finally, we discuss the potential directions for future research.
 
 
 - Learning from positive and unlabeled data: a survey. [[paper]](https://link.springer.com/content/pdf/10.1007/s10994-020-05877-5.pdf?pdf=button)
