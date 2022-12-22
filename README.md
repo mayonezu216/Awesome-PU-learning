@@ -264,7 +264,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: Loss Decomposition and Centroid Estimation (LDCE).
   - <details><summary>Digest</summary> This paper regards all unlabeled examples as negative, which means that some of the original positive data are mistakenly labeled as negative. By doing so, we convert PU learning into the risk min- imization problem in the presence of false negative label noise, and propose a novel PU learning algo- rithm termed “Loss Decomposition and Centroid Estimation” (LDCE). By decomposing the hinge loss function into two parts, we show that only the second part is influenced by label noise, of which the adverse effect can be reduced by estimating the centroid of negative examples
   
-- fBGD: Learning Embeddings From Positive Unlabeled Data with BGD. 
+- fBGD: Learning Embeddings From Positive Unlabeled Data with BGD. [[PAPER]](https://eprints.gla.ac.uk/166078/1/166078.pdf)
   - Fajie Yuan, Xin Xin, Xiangnan He, Guibing Guo, Weinan Zhang, Chua Tat-Seng and Joemon M. Jose. 2018.
   - Keywords: fast and generic batch gradient descent optimizer (fBGD).
   -  <details><summary>Digest</summary> We present a fast and generic batch gradient descent optimizer (fBGD) to learn from all training examples without sampling. By leveraging sparsity in PU data, we accelerate fBGD by several magnitudes, making its time complexity the same level as the NS-based stochastic gradient descent method. Meanwhile, we observe that the standard batch gradient method suffers from gradient instability issues due to the sparsity property.
