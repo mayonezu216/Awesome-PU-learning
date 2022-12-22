@@ -83,10 +83,6 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
    - Guangxin Su, Weitong Chen, Miao Xu. IJCAI 2021.
    -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consis- tent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expecta- tion, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
 
-- Positive-Unlabeled Learning from Imbalanced Data [[paper]](https://www.ijcai.org/proceedings/2021/0412.pdf)
-  - Guangxin Su, Weitong Chen, Miao Xu. IJCAI 2021.
-  -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consis- tent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expecta- tion, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
-
 - ARTA: Collection and Classification of Ambiguous Requests and Thoughtful Actions.[[paper]](https://arxiv.org/pdf/2106.07999.pdf) [[code]](https://github.com/ahclab/arta_corpus)
   - Shohei Tanaka, Koichiro Yoshino, Katsuhito Sudoh, Satoshi Nakamura. ACL 2021.
   - Keywords:  dialogue systems, dialogue agent, PU learning.
