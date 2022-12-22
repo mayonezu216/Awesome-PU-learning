@@ -59,9 +59,9 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
    - <details><summary>Digest</summary> We propose positive-unlabeled learning with adversarial data augmentation (PUDA) for KGC. In particular, PUDA tailors positive-unlabeled risk estimator for the KGC task to deal with the false negative issue. Furthermore, to address the data sparsity issue, PUDA achieves a data augmentation strategy by unifying adversarial training and positive-unlabeled learning under the positive-unlabeled minimax game.
   
 - Recovering The Propensity Score From Biased Positive Unlabeled Data. [[paper]](https://www.aaai.org/AAAI22Papers/AAAI-12934.GerychW.pdf)
-  -  Gerych W, Hartvigsen T, Buquicchio L, et al. AAAI 2022.
+  - Gerych W, Hartvigsen T, Buquicchio L, et al. AAAI 2022.
   - Keywords: biased distribution, propensity score.
-  - In this work, we propose two sets of assumptions under which the propensity score can be uniquely determined: one in which no assumption is made on the functional form of the propensity score (requiring assumptions on the data distribution), and the second which loosens the data assumptions while assuming a functional form for the propensity score. We then propose inference strategies for each case.
+  - <details><summary>Digest</summary> In this work, we propose two sets of assumptions under which the propensity score can be uniquely determined: one in which no assumption is made on the functional form of the propensity score (requiring assumptions on the data distribution), and the second which loosens the data assumptions while assuming a functional form for the propensity score. We then propose inference strategies for each case.
   
 - Unifying Knowledge Base Completion with PU Learning to Mitigate the Observation Bias.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/20332/20091)
   - Jonas Schouterden, Jessa Bekker, Jesse Davis, Hendrik Blockeel. AAAI 2022.
@@ -83,7 +83,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: positive and unlabeled learning with privileged information (SPUPIL).
   - <details><summary>Digest</summary> In this paper, we propose a new method, which is based on similarity approach for the problem of positive and unlabeled learning with privileged information (SPUPIL), which consists of two steps. The proposed SPUPIL method first conducts KNN method to generate the similarity weights and then the similarity weights and privileged information are incorporated to the learning model based on Ranking SVM to build a more accurate classifier. We also use the Lagrangian method to transform the original model into its dual problem, and solve it to obtain the classifier.
   
-- Graph-based PU learning for binary and multiclass classification without class prior.  [[paper]](https://link.springer.com/content/pdf/10.1007/s10115-022-01702-8.pdf?pdf=button)
+- Graph-based PU learning for binary and multiclass classification without class prior.[[paper]](https://link.springer.com/content/pdf/10.1007/s10115-022-01702-8.pdf?pdf=button)
   - Jaemin Yoo, Junghun Kim, Hoyoung Yoon, Geonsoo Kim, Changwon Jang & U Kang. Knowledge and Information Systems 2022.
   - Keywords: Graph-based PU Learning, Risk Minimization, IterAtive Belief Propagation.
   - <details><summary>Digest</summary> In this work, we propose GRAB (Graph-based Risk minimization with iterAtive Belief propagation), a novel end-to-end approach for graph-based PU learning that requires no class prior. GRAB runs marginalization and update steps iteratively. The marginalization step models the given graph as a Markov network and estimates the marginals of latent variables. The update step trains the binary classifier by utilizing the computed marginals in the objective function. We then generalize GRAB to multi-positive unlabeled (MPU) learning, where multiple positive classes exist in a dataset. 
@@ -115,7 +115,8 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
  
 - Positive-Unlabeled Learning from Imbalanced Data [[paper]](https://www.ijcai.org/proceedings/2021/0412.pdf)
    - Guangxin Su, Weitong Chen, Miao Xu. IJCAI 2021.
-   -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consis- tent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expecta- tion, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
+   - Keywords: risk estimator, classifier learning, oversampled balanced data.
+   -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consistent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expectation, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
 
 - ARTA: Collection and Classification of Ambiguous Requests and Thoughtful Actions.[[paper]](https://arxiv.org/pdf/2106.07999.pdf) [[code]](https://github.com/ahclab/arta_corpus)
   - Shohei Tanaka, Koichiro Yoshino, Katsuhito Sudoh, Satoshi Nakamura. ACL 2021.
@@ -148,6 +149,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
  
 - Partial Optimal Transport with Applications on Positive-Unlabeled Learning. [[paper]](https://proceedings.neurips.cc/paper/2020/file/1e6e25d952a0d639b676ee20d0519ee2-Paper.pdf) [[code]](https://github.com/TAMU-VITA/Self-PU)
   - Laetitia Chapel, Mokhtar Z. Alaya and Gilles Gasso. NeurIPS 2020.
+  - Keywords: partial Wasserstein, Gromov-Wasserstein.
   - <details><summary>Digest</summary> we address the partial Wasserstein and Gromov-Wasserstein problems and propose exact algorithms to solve them. We showcase the new formulation in a positive-unlabeled (PU) learning application. To the best of our knowledge, this is the first application of optimal transport in this context and we first highlight that partial Wasserstein-based metrics prove effective in usual PU learning settings. We then demonstrate that partial Gromov-Wasserstein metrics are efficient in scenarii in which the samples from the positive and the unlabeled datasets come from different domains or have different features.
   
  - Temporal Positive-unlabeled Learning for Biomedical Hypothesis Generation via Risk Estimation. [[paper]](https://proceedings.neurips.cc/paper/2020/hash/310614fca8fb8e5491295336298c340f-Abstract.html)
