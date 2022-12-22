@@ -78,6 +78,19 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Saurabh Garg, Yifan Wu, Alex Smola, Sivaraman Balakrishnan, Zachary C. Lipton. NeurIPS 2021.
   - Keywords:  Mixture Proportion Estimation (MPE), Best Bin Estimation (BBE), Conditional Value Ignoring Risk (CVIR).
   - <details><summary>Digest</summary> In this paper, we propose two simple techniques: Best Bin Estimation (BBE) (for MPE); and Conditional Value Ignoring Risk (CVIR), a simple objective for PU-learning. Both methods dominate previous approaches empirically, and for BBE, we establish formal guarantees that hold whenever we can train a model to cleanly separate out a small subset of positive examples. Our final algorithm (TED)^n, alternates between the two procedures, significantly improving both our mixture proportion estimator and classifier. 
+ 
+- Positive-Unlabeled Learning from Imbalanced Data [[paper]](https://www.ijcai.org/proceedings/2021/0412.pdf)
+   - Guangxin Su, Weitong Chen, Miao Xu. IJCAI 2021.
+   -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consis- tent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expecta- tion, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
+
+- ARTA: Collection and Classification of Ambiguous Requests and Thoughtful Actions.[[paper]](https://arxiv.org/pdf/2106.07999.pdf) [[code]](https://github.com/ahclab/arta_corpus)
+  - Shohei Tanaka, Koichiro Yoshino, Katsuhito Sudoh, Satoshi Nakamura. ACL 2021.
+  - Keywords:  dialogue systems, dialogue agent, PU learning.
+  - <details><summary>Digest</summary> We collected a corpus and developed a model that classifies ambiguous user requests into corresponding system actions. In order to collect a high-quality corpus, we asked workers to input antecedent user requests whose pre-defined actions could be regarded as thoughtful. Although multiple actions could be identified as thoughtful for a single user request, annotating all combinations of user requests and system actions is impractical. For this reason, we fully annotated only the test data and left the annotation of the training data incomplete. In order to train the classification model on such training data, we applied the positive/unlabeled (PU) learning method, which assumes that only a part of the data is labeled with positive examples. 
+  
+- Data-Free Knowledge Distillation with Positive-Unlabeled Learning.[[paper]](https://link.springer.com/content/pdf/10.1007/978-3-030-92270-2.pdf?pdf=button)
+  - Keywords: Model compression, Data-free knowledge distillation, Positive-unlabeled learning, Attention mechanism.
+  - <details><summary>Digest</summary> In this paper, we propose a data-free knowledge distillation method called DFPU, which introduce positive-unlabeled (PU) learning. For training a compact neural network without data, a generator is introduced to generate pseudo data under the supervision of the teacher network. By feeding the generated data into the teacher network and student network, the attention features are extracted for knowledge transfer. The student network is promoted to produce more similar features to the teacher network by PU learning. Without any data, the efficient student network trained by DFPU contains only half parameters and calculations of the teacher network and achieves an accuracy similar to the teacher network.
   
 - Asymmetric Loss for Positive-Unlabeled Learning. [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9428350)
   - Cong Wang, Jian Pu, Zhi Xu, and Junping Zhang. IEEE ICME 2021.
@@ -89,14 +102,10 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: PUNet, Temporal Action Proposal Generation, Key Frame Annotations, Positive Unlabeled Learning.
   - <details><summary>Digest</summary>  To tackle the class imbalance by using only a single frame, we evaluate an extremely simple Positive-Unlabeled algorithm (PU-learning). We demonstrate on THUMOS’14 and ActivityNet that using a single key frame label give good results while being significantly faster to annotate. In addition, we show that our simple method, PUNet, is data-efficient which further reduces the need for expensive annotations. 
   
- - Positive-Unlabeled Learning from Imbalanced Data [[paper]](https://www.ijcai.org/proceedings/2021/0412.pdf)
-   - Guangxin Su, Weitong Chen, Miao Xu. IJCAI 2021.
-   -  <details><summary>Digest</summary> In this paper, we explore this problem and propose a general learning objective for PU learning targeting specially at imbalanced data. By this general learning objective, state-of- the-art PU methods based on optimizing a consis- tent risk estimator can be adapted to conquer the imbalance. We theoretically show that in expecta- tion, optimizing our learning objective is equivalent to learning a classifier on the oversampled balanced data with both P and N data available, and further provide an estimation error bound. 
-
-- ARTA: Collection and Classification of Ambiguous Requests and Thoughtful Actions.[[paper]](https://arxiv.org/pdf/2106.07999.pdf) [[code]](https://github.com/ahclab/arta_corpus)
-  - Shohei Tanaka, Koichiro Yoshino, Katsuhito Sudoh, Satoshi Nakamura. ACL 2021.
-  - Keywords:  dialogue systems, dialogue agent, PU learning.
-  - <details><summary>Digest</summary> We collected a corpus and developed a model that classifies ambiguous user requests into corresponding system actions. In order to collect a high-quality corpus, we asked workers to input antecedent user requests whose pre-defined actions could be regarded as thoughtful. Although multiple actions could be identified as thoughtful for a single user request, annotating all combinations of user requests and system actions is impractical. For this reason, we fully annotated only the test data and left the annotation of the training data incomplete. In order to train the classification model on such training data, we applied the positive/unlabeled (PU) learning method, which assumes that only a part of the data is labeled with positive examples. 
+- Loss Decomposition and Centroid Estimation for Positive and Unlabeled Learning.[[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8839365)
+  - Chen Gong, Hong Shi, Tongliang Liu, Chuang Zhang, Jian Yang and Dacheng Tao. IEEE Transactions on Pattern Analysis and Machine Intelligence 2021.
+  - Keywords: Positive and Unlabeled learning, Loss Decomposition and Centroid Estimation (LDCE), Kernelized LDCE (KLDCE).
+  - <details><summary>Digest</summary> we propose a novel PU learning algorithm dubbed “Loss Decomposition and Centroid Estimation” (LDCE). By decomposing the loss function of corrupted negative examples into two parts, we show that only the second part is affected by the noisy labels. Thereby, we may estimate the centroid of corrupted negative set via an unbiased way to reduce the adverse impact of such label noise. Furthermore, we propose the “Kernelized LDCE” (KLDCE) by introducing the kernel trick, and show that KLDCE can be easily solved by combining Alternative Convex Search (ACS) and Sequential Minimal Optimization (SMO). Theoretically, we derive the generalization error bound which suggests that the generalization risk of our model converges to the empirical risk with the order of O(1= k + 1= n k+ 1=%/n) (n and k are the amounts of training data and positive data correspondingly). 
   
 - Object detection as a positive-unlabeled problem [[paper]](https://arxiv.org/pdf/2002.04672.pdf)
   - Y Yang, KJ Liang, L Carin. BMVC 2020.
@@ -157,6 +166,14 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
    - Keywords: Weighting algorithm, biased negative data, positive-unlabeled (PU) learning.
    - <details><summary>Digest</summary> This paper studies a novel classification framework which incorporates such biased N (bN) data in PU learning. We provide a method based on empirical risk minimization to address this PUbN classification problem. Our approach can be regarded as a novel example-weighting algorithm, with the weight of each example computed through a preliminary step that draws inspiration from PU learning. We also derive an estimation error bound for the proposed method. 
   
+- Large-Margin Label-Calibrated Support Vector Machines for Positive and Unlabeled Learning.[[paper]](
+  https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8636540)
+  - Chen Gong, Tongliang Liu, Jian Yang, Dacheng Tao. IEEE Transactions on Neural Networks and Learning Systems 2019.
+  - Keywords: Large-margin Label-calibrated Support Vector Machines (LLSVM), Positive and Unlabeled Learning.
+  - <details><summary>Digest</summary> In this paper, we argue that the clusters formed by positive examples and potential negative examples in the feature space should be critically utilized to establish the PU learning model, especially when the negative data are not explicitly available. To this end, we introduce a hat loss to discover the margin between data clusters, a label calibration regularizer to amend the biased decision boundary to the potentially correct one, and propose a novel discriminative PU classifier termed “Large-margin Label-calibrated Support Vector Machines” (LLSVM). Our LLSVM classifier can work properly in the absence of negative training examples and effectively achieve the max-margin effect between positive and negative classes.
+  
+  
+  
 - Margin Based PU Learning.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/11698/11557)
   - Tieliang Gong, Guangtao Wang, Jieping Ye, Zongben Xu and Ming Lin. AAAI 2018.
   - Keywords: PU Learning, Generalization error, Classification.
@@ -176,8 +193,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
 - Distributional Similarity vs. PU Learning for Entity Set Expansion. [[paper]](https://aclanthology.org/P10-2066.pdf)
   - Xiao-Li Li, Lei Zhang, Bing Liu, See-Kiong Ng. ACL 2010.
   - Keywords: Distributional Similarity, PU Learning, Entity Set Expansion.
-  - <details><summary>Digest</summary> 
-Distributional similarity is a classic tech- nique for entity set expansion, where the system is given a set of seed entities of a particular class, and is asked to expand the set using a corpus to obtain more entities of the same class as represented by the seeds. This paper shows that a machine learning model called positive and unlabeled learning (PU learning) can model the set expansion problem better.
+  - <details><summary>Digest</summary> Distributional similarity is a classic tech- nique for entity set expansion, where the system is given a set of seed entities of a particular class, and is asked to expand the set using a corpus to obtain more entities of the same class as represented by the seeds. This paper shows that a machine learning model called positive and unlabeled learning (PU learning) can model the set expansion problem better.
   
 ## Application Paper in Medical Image Analysis
   
