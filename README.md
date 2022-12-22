@@ -9,14 +9,30 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
 
 # Paper List
 ## Survey
+- A Recent Survey on Instance-Dependent Positive and Unlabeled Learning. [[paper]](https://gcatnjust.github.io/ChenGong/paper/gong_frme22.pdf)
+- Chen Gong, Muhammad Imran Zulfiqar, Chuang Zhang, Shahid Mahmood, Jian Yang. Fundamental Research 2022.
+- Keywords: Instance-dependent positive and unlabeled learning, Weakly supervised learning, Label noise learning, Cost-sensitive learning.
+-  <details><summary>Digest</summary> In this survey, we first present the preliminary knowledge of PU learning, and then review the representative instance-dependent PU learning settings and methods. After that, we thoroughly compare them with typical PU learning methods on various benchmark datasets and analyze their performances. Finally, we discuss the potential directions for future research.
+
+
 - Learning from positive and unlabeled data: a survey. [[paper]](https://link.springer.com/content/pdf/10.1007/s10994-020-05877-5.pdf?pdf=button)
-  - Jessa Bekker, Jesse Davis. Machine Learning (2020) 109:719–760.
+  - Jessa Bekker, Jesse Davis. Machine Learning 2020.
   - Keywords: Classification, Weakly supervised learning, PU learning.
   - <details><summary>Digest</summary> This article provides a survey of the current state of the art in PU learning. It proposes seven key research questions that commonly arise in this field and provides a broad overview of how the field has tried to address them.
+
+- Positive And Unlabeled Learning Algorithms And Applications: A Survey.  [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8900698) 
+  - Kristen Jaskie, Andreas Spanias. IISA 2019.
+  - Keywords: PU learning, positive unlabeled learning, machine learning, artificial intelligence, classification.
+  - <details><summary>Digest</summary> In this paper, we explore several applications for PU learning including examples in biological/medical, business, security, and signal processing. We then survey the literature for new and existing solutions to the PU learning problem.
+
   
 
 
 ## ML Conference/Journal Paper
+- Federated Learning with Positive and Unlabeled Data.[[paper]](https://proceedings.mlr.press/v162/lin22b/lin22b.pdf)
+  - Xinyang Lin, Hanting Chen, Yixing Xu, Chao Xu, Xiaolin Gui, Yiping Deng, Yunhe Wang. ICML 2022.
+  - Keywords: Federated learning with Positive and Unlabeled data (FedPU).
+  - we propose a novel framework, namely Federated learning with Positive and Unlabeled data (FedPU), to minimize the expected risk of multiple negative classes by leveraging the labeled data in other clients. We theoretically analyze the generalization bound of the proposed FedPU.
 
 - Rethinking Class-Prior Estimation for Positive-Unlabeled Learning. [[paper]](https://openreview.net/pdf?id=aYAA-XHKyk)
   - Yu Yao, Tongliang Liu, Bo Han, Mingming Gong, Gang Niu, Masashi Sugiyama, Dacheng Tao. ICLR 2022.
@@ -42,7 +58,12 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Changchun Li, Ximing Li, Lei Feng, Jihong Ouyang. ICLR 2022.
   - Keywords: Positive and Unlabeled Learning, Mixup, Heuristic.
   - <details><summary>Digest</summary> In this paper, we propose a novel PU learning method, namely Positive and unlabeled learning with Partially Positive Mixup (P3Mix), which simultaneously benefits from data augmentation and supervision correction with a heuristic mixup technique. To be specific, we take inspiration from the directional boundary deviation phenomenon observed in our preliminary experiments, where the learned PU boundary tends to deviate from the fully supervised boundary towards the positive side. For the unlabeled instances with ambiguous predictive results, we select their mixup partners from the positive instances around the learned PU boundary, so as to transform them into augmented instances near to the boundary yet with more precise supervision. Accordingly, those augmented instances may push the learned PU boundary towards the fully supervised boundary, thereby improving the classification performance. 
-  
+
+- Predictive Adversarial Learning from Positive and Unlabeled Data. [[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/16953/16760)
+  - Wenpeng Hu, Ran Le, Bing Liu, Feng Ji, Jinwen Ma, Dongyan Zhao and Rui Yan. AAAI 2021.
+  - Keywords: Classification and Regression.
+  - This paper proposes a novel PU learning method called Predictive Adversarial Networks (PAN) based on GAN (Generative Adversarial Networks). GAN learns a generator to generate data (e.g., images) to fool a discriminator which tries to determine whether the generated data belong to a (positive) training class. PU learning can be casted as trying to identify (not generate) likely positive instances from the unlabeled set to fool a discriminator that determines whether the identified likely positive instances from the unlabeled set are indeed positive. However, directly applying GAN is problematic because GAN focuses on only the positive data. The resulting PU learning method will have high precision but low recall. We propose a new objective function based on KL-divergence. Evaluation using both image and text data shows that PAN outperforms state-of-the-art PU learning methods and also a direct adaptation of GAN for PU learning. We propose a new objective function based on KL-divergence. 
+
  - PULNS: Positive-Unlabeled Learning with Effective Negative Sample Selector.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/17064/16871)
    - Chuan Luo, Pu Zhao, Chen Chen, Bo Qiao, Chao Du, Hongyu Zhang, Wei Wu, Shaowei Cai, Bing He, Saravanakumar Rajmohan and Qingwei Lin. AAAI 2021.
    - Keywords: Semi-Supervised Learning, Unsupervised & Self-Supervised Learning.
