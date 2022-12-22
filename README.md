@@ -32,7 +32,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
 - Federated Learning with Positive and Unlabeled Data.[[paper]](https://proceedings.mlr.press/v162/lin22b/lin22b.pdf)
   - Xinyang Lin, Hanting Chen, Yixing Xu, Chao Xu, Xiaolin Gui, Yiping Deng, Yunhe Wang. ICML 2022.
   - Keywords: Federated learning with Positive and Unlabeled data (FedPU).
-  - we propose a novel framework, namely Federated learning with Positive and Unlabeled data (FedPU), to minimize the expected risk of multiple negative classes by leveraging the labeled data in other clients. We theoretically analyze the generalization bound of the proposed FedPU.
+  -  <details><summary>Digest</summary> We propose a novel framework, namely Federated learning with Positive and Unlabeled data (FedPU), to minimize the expected risk of multiple negative classes by leveraging the labeled data in other clients. We theoretically analyze the generalization bound of the proposed FedPU.
 
 - Rethinking Class-Prior Estimation for Positive-Unlabeled Learning. [[paper]](https://openreview.net/pdf?id=aYAA-XHKyk)
   - Yu Yao, Tongliang Liu, Bo Han, Mingming Gong, Gang Niu, Masashi Sugiyama, Dacheng Tao. ICLR 2022.
