@@ -9,6 +9,9 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
 
 # Paper List
 ## Survey
+- Positive Unlabeled Learning [[book]](https://link.springer.com/content/pdf/10.1007/978-3-031-79178-9.pdf?pdf=button)
+  - Kristen Jaskie , Andreas Spanias. 2022.
+
 - A Recent Survey on Instance-Dependent Positive and Unlabeled Learning. [[paper]](https://gcatnjust.github.io/ChenGong/paper/gong_frme22.pdf)
   - Chen Gong, Muhammad Imran Zulfiqar, Chuang Zhang, Shahid Mahmood, Jian Yang. Fundamental Research 2022.
   - Keywords: Instance-dependent positive and unlabeled learning, Weakly supervised learning, Label noise learning, Cost-sensitive learning.
@@ -29,6 +32,12 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
 
 
 ## ML Conference/Journal Paper
+  
+- Incorporating Semi-Supervised and Positive-Unlabeled Learning for Boosting Full Reference Image Quality Assessment.[[paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Cao_Incorporating_Semi-Supervised_and_Positive-Unlabeled_Learning_for_Boosting_Full_Reference_Image_CVPR_2022_paper.pdf)
+  - Yue Cao, Zhaolin Wan, Dongwei Ren, Zifei Yan, Wangmeng Zuo. CVPR 2022.
+  - Keywords: image quality assessment (IQA), mean opinion score (MOS), Semi-supervised learning (SSL), positive-unlabeled (PU) learning.
+  - <details><summary>Digest</summary> In this paper, we suggest to incorporate semi-supervised and positive-unlabeled (PU) learning for exploiting unlabeled data while mitigating the adverse effect of outliers. Particularly, by treating all labeled data as positive samples, PU learning is leveraged to identify negative samples (i.e., outliers) from unlabeled data. Semi-supervised learning (SSL) is further deployed to exploit positive unlabeled data by dynamically generating pseudo-MOS. We adopt a dual-branch network including reference and distortion branches. Furthermore, spatial attention is introduced in the reference branch to concentrate more on the informative regions, and sliced Wasserstein distance is used for robust difference map computation to address the misalignment issues caused by images recovered by GAN models. 
+  
 - Federated Learning with Positive and Unlabeled Data.[[paper]](https://proceedings.mlr.press/v162/lin22b/lin22b.pdf)
   - Xinyang Lin, Hanting Chen, Yixing Xu, Chao Xu, Xiaolin Gui, Yiping Deng, Yunhe Wang. ICML 2022.
   - Keywords: Federated learning with Positive and Unlabeled data (FedPU).
@@ -48,6 +57,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Walter Gerych, Tom Hartvigsen, Luke Buquicchio, Abdulaziz Alajaji, Kavin Chandrasekaran, Hamid Mansoor, Elke Rundensteiner, and Emmanuel Agu. SDM 2022.
   - Keywords: sequential bias, DeepSPU.
   - <details><summary>Digest</summary> In this work, we propose a novel solution to tackling this open sequential bias problem, called DeepSPU. DeepSPU recovers missing labels by constructing a model of the sequentially biased labeling process itself. This labeling model is then learned jointly with the prediction model that infers the missing labels in an iterative training process. Further, we regulate this training using a theoretically-justified cost functions that prevent our model from converging to incorrect but low-cost solution.
+ 
+- A new method for positive and unlabeled learning with privileged information.[[paper]](https://link.springer.com/content/pdf/10.1007/s10489-021-02528-7.pdf?pdf=button)
+  - Bo Liu, Qian Liu & Yanshan Xiao. Applied Intelligence 2022.
+  - Keywords: positive and unlabeled learning with privileged information (SPUPIL).
+  - <details><summary>Digest</summary> In this paper, we propose a new method, which is based on similarity approach for the problem of positive and unlabeled learning with privileged information (SPUPIL), which consists of two steps. The proposed SPUPIL method first conducts KNN method to generate the similarity weights and then the similarity weights and privileged information are incorporated to the learning model based on Ranking SVM to build a more accurate classifier. We also use the Lagrangian method to transform the original model into its dual problem, and solve it to obtain the classifier.
   
 - Graph-based PU learning for binary and multiclass classification without class prior.  [[paper]](https://link.springer.com/content/pdf/10.1007/s10115-022-01702-8.pdf?pdf=button)
   - Jaemin Yoo, Junghun Kim, Hoyoung Yoon, Geonsoo Kim, Changwon Jang & U Kang. Knowledge and Information Systems 2022.
@@ -107,6 +121,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: Positive and Unlabeled learning, Loss Decomposition and Centroid Estimation (LDCE), Kernelized LDCE (KLDCE).
   - <details><summary>Digest</summary> we propose a novel PU learning algorithm dubbed “Loss Decomposition and Centroid Estimation” (LDCE). By decomposing the loss function of corrupted negative examples into two parts, we show that only the second part is affected by the noisy labels. Thereby, we may estimate the centroid of corrupted negative set via an unbiased way to reduce the adverse impact of such label noise. Furthermore, we propose the “Kernelized LDCE” (KLDCE) by introducing the kernel trick, and show that KLDCE can be easily solved by combining Alternative Convex Search (ACS) and Sequential Minimal Optimization (SMO). Theoretically, we derive the generalization error bound which suggests that the generalization risk of our model converges to the empirical risk with the order of O(1= k + 1= n k+ 1=%/n) (n and k are the amounts of training data and positive data correspondingly). 
   
+  
 - Object detection as a positive-unlabeled problem [[paper]](https://arxiv.org/pdf/2002.04672.pdf)
   - Y Yang, KJ Liang, L Carin. BMVC 2020.
   - Keywords: Label quality, object detection, pattern recognition. 
@@ -151,6 +166,11 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - Keywords: Collectively loss, PU learning, cPU.
   - <details><summary>Digest</summary> In this paper, we propose a Collectively loss function to learn from only Positive and Unlabeled data (cPU). We theoretically elicit the loss function from the setting of PU learning. 
 
+- Counter-examples generation from a positive unlabeled image dataset.[[paper]](https://doi.org/10.1016/j.patcog.2020.107527)
+  - Florent Chiaroni, Ghazaleh Khodabandelou, Mohamed-Cherif Rahal, Nicolas Hueber, Frederic Dufaux. Pattern Recognition 2020.
+  - Keywords: Counter-examples generation, GAN, positive unlabeled (PU) learning.
+  - <details><summary>Digest</summary>  In this context, we propose a two-stage GAN-based model. More specifically, the main contribution is to incorporate a biased PU risk within the standard GAN discriminator loss function. In this manner, the discriminator is constrained to steer the generator to converge towards the unlabeled samples distribution while diverging from the positive samples distribution. Consequently, the proposed model, referred to as D-GAN, exclusively learns the counter-examples distribution without prior knowledge. 
+  
 - Principled analytic classifier for positive-unlabeled learning via weighted integral probability metric. [[paper]](https://link.springer.com/content/pdf/10.1007/s10994-019-05836-9.pdf?pdf=button)
   - Yongchan Kwon, Wonyoung Kim, Masashi Sugiyama & Myunghee Cho Paik. Machine Learning 2020.
   - Keywords: Principled analytic classifier, positive-unlabeled learning, weighted integral probability metric.
@@ -196,26 +216,70 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   - <details><summary>Digest</summary> Distributional similarity is a classic tech- nique for entity set expansion, where the system is given a set of seed entities of a particular class, and is asked to expand the set using a corpus to obtain more entities of the same class as represented by the seeds. This paper shows that a machine learning model called positive and unlabeled learning (PU learning) can model the set expansion problem better.
   
 ## Application Paper in Medical Image Analysis
-  
-- Self-PU: Self Boosted and Calibrated Positive-Unlabeled Training. [[paper]](https://proceedings.mlr.press/v119/chen20b/chen20b.pdf)
-  - Xuxi Chen, Wuyang Chen, Tianlong Chen, Ye Yuan, Chen Gong, Kewei Chen, Zhangyang Wang. ICML 2020.
-  - Application: classifying brain images of Alzheimer’s Disease.
-  - <details><summary>Digest</summary> This paper proposed a novel Self-PU learning framework, which seamlessly integrates PU learning and self-training. Self-PU highlights three “self”-oriented building blocks: a self-paced training algorithm that adaptively discovers and augments confident positive/negative examples as the training proceeds; a self-reweighted, instance-aware loss; and a self-distillation scheme that introduces teacher-students learning as an effective regularization for PU learning. 
 
+- ShapePU: A New PU Learning Framework Regularized by Global Consistency for Scribble Supervised Cardiac Segmentation[[paper]](https://arxiv.org/pdf/2206.02118.pdf)[[code]](https://github.com/BWGZK/ShapePU)
+  - Ke Zhang and Xiahai Zhuang. MICCAI 2022.
+  - Keywords: Weakly supervised learning, PU learning, Segmentation.
+  - Application: Cardiac segmentation.
+  - <details><summary>Digest</summary> We propose a new scribble-guided method for cardiac segmentation, based on the Positive-Unlabeled (PU) learning framework and global consistency regularization, and termed as ShapePU. To leverage unlabeled pixels via PU learning, we first present an Expectation-Maximization (EM) algorithm to estimate the proportion of each class in the unlabeled pixels. Given the estimated ratios, we then introduce the marginal probability maximization to identify the classes of unlabeled pixels. To exploit shape knowledge, we apply cutout operations to training images, and penalize the inconsistent segmentation results. 
+  
+- Anatomy-Guided Weakly-Supervised Abnormality Localization in Chest X-rays. [[paper]](https://link.springer.com/content/pdf/10.1007/978-3-031-16443-9.pdf?pdf=button)[[code]](https://github.com/batmanlab/AGXNet)
+  - Ke Yu, Shantanu Ghosh, Zhexiong Liu, Christopher Deible & Kayhan Batmanghelich. MICCAI 2022.
+  - Keywords: Weakly-supervised learning, PU learning, Disease detection, Class activation map, Residual attention.
+  - Application: Anatomy-Guided chest X-ray Network to address these issues of weak annotation.
+  - <details><summary>Digest</summary> We propose an Anatomy-Guided chest X-ray Network (AGXNet) to address these issues of weak annotation. Our framework consists of a cascade of two networks, one responsible for identifying anatomical abnormalities and the second responsible for pathological observations. The critical component in our framework is an anatomy-guided attention module that aids the downstream observation network in focusing on the relevant anatomical regions generated by the anatomy network. We use Positive Unlabeled (PU) learning to account for the fact that lack of mention does not necessarily mean a negative label. Our quantitative and qualitative results on the MIMIC-CXR dataset demonstrate the effectiveness of AGXNet in disease and anatomical abnormality localization.
+  
 - Embryo Grading With Unreliable L abels Due to Chromosome Abnormalities by Regularized PU Learning With Ranking. [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9606688&tag=1)
   - Masashi Nagaya and Norimichi Ukita. IEEE Transactions on Medical Imaging 2022.
   - Keywords: Deep convolutional networks, positive-unlabeled learning, learning-to-rank, mutual information.
   - Application: human embryo grading with its images.
   - <details><summary>Digest</summary> For alleviating an adverse effect of the unreliable labels, our method employs Positive-Unlabeled (PU) learning so that live birth and non-live birth are labeled as positive and unlabeled, respectively, where unlabeled samples contain both positive and negative samples. In our method, this PU learning on a deep CNN is improved by a learning-to-rank scheme. While the original learning-to- rank scheme is designed for positive-negative learning, it is extended to PU learning. Furthermore, overfitting in this PU learning is alleviated by regularization with mutual information.
   
+- Self-PU: Self Boosted and Calibrated Positive-Unlabeled Training. [[paper]](https://proceedings.mlr.press/v119/chen20b/chen20b.pdf)
+  - Xuxi Chen, Wuyang Chen, Tianlong Chen, Ye Yuan, Chen Gong, Kewei Chen, Zhangyang Wang. ICML 2020.
+  - Application: classifying brain images of Alzheimer’s Disease.
+  - <details><summary>Digest</summary> This paper proposed a novel Self-PU learning framework, which seamlessly integrates PU learning and self-training. Self-PU highlights three “self”-oriented building blocks: a self-paced training algorithm that adaptively discovers and augments confident positive/negative examples as the training proceeds; a self-reweighted, instance-aware loss; and a self-distillation scheme that introduces teacher-students learning as an effective regularization for PU learning. 
+
+  
 - Positive-Unlabeled Learning for Cell Detection in Histopathology Images with Incomplete Annotations [[paper]](https://arxiv.org/pdf/2106.15918.pdf)
   - Zipei Zhao, Fengqian Pang, Zhiwen Liu, Chuyang Ye. MICCAI 2021.
   - Keywords: Cell detection, positive-unlabeled learning, incomplete annotation.
   - Application: Cell detection in histopathology images.
   - <details><summary>Digest</summary>  In this work, to address the problem of incomplete annotations, we formulate the training of detection networks as a positive-unlabeled learning problem. Specifically, the classification loss in network training is revised to take into account incomplete annotations, where the terms corresponding to negative samples are approximated with the true positive samples and the other sam- ples of which the labels are unknown.
+
+- Semi-Supervised Screening of COVID-19 from Positive and Unlabeled Data with Constraint Non-Negative Risk Estimator.[[paper]](https://link.springer.com/content/pdf/10.1007/978-3-030-78191-0.pdf?pdf=button)
+  - Zhongyi Han, Rundong He, Tianyang Li, Benzheng Wei, Jian Wang & Yilong Yin. IPMI 2021.
+  - Keywords: COVID-19 screening, Positive unlabled learning, X-ray, computed tomography.
+  - <details><summary>Digest</summary> We propose a new PU learning method called Constraint Non-Negative Positive Unlabeled Learning (cnPU). It suggests the constraint non-negative risk estimator, which is more robust against overfitting than previous PU learning methods when giving limited positive data. It also embodies a new and efficient optimization algorithm that can make the model learn well on positive data and avoid overfitting on unlabeled data. To the best of our knowledge, this is the first work that realizes PU learning of COVID-19.
   
-- ShapePU: A New PU Learning Framework Regularized by Global Consistency for Scribble Supervised Cardiac Segmentation[[paper]](https://arxiv.org/pdf/2206.02118.pdf)[[code]](https://github.com/BWGZK/ShapePU)
-  - Ke Zhang and Xiahai Zhuang. MICCAI 2022.
-  - Keywords: Weakly supervised learning, PU learning, Segmentation.
-  - Application: Cardiac segmentation.
-  - <details><summary>Digest</summary> We propose a new scribble-guided method for cardiac segmentation, based on the Positive-Unlabeled (PU) learning framework and global consistency regularization, and termed as ShapePU. To leverage unlabeled pixels via PU learning, we first present an Expectation-Maximization (EM) algorithm to estimate the proportion of each class in the unlabeled pixels. Given the estimated ratios, we then introduce the marginal probability maximization to identify the classes of unlabeled pixels. To exploit shape knowledge, we apply cutout operations to training images, and penalize the inconsistent segmentation results. 
+- Cell Detection from Imperfect Annotation by Pseudo Label Selection Using P-classification. [[paper]](https://link.springer.com/content/pdf/10.1007/978-3-030-87237-3.pdf?pdf=button)
+  - Keywords: Cell detection, Imperfect annotation.
+  - Application: Cell detection.
+  - <details><summary>Digest</summary> Our proposed method takes a pseudo labeling approach for cell detection from imperfect annotated data. A detection convolutional neural network (CNN) trained using such missing labeled data often produces over-detection. We treat partially labeled cells as positive samples and the detected positions except for the labeled cell as unlabeled samples. Then we select reliable pseudo labels from unlabeled data using recent machine learning techniques; positive-and-unlabeled (PU) learning and P-classification.
+  
+- 3D-BoxSup: Positive-Unlabeled Learning of Brain Tumor Segmentation Networks From 3D Bounding Boxes. [[paper]](https://www.frontiersin.org/articles/10.3389/fnins.2020.00350/full)
+  - Yanwu Xu, Mingming Gong, Junxiang Chen, Ziye Chen and Kayhan Batmanghelich. Frontiers in Neuroscience 2020.
+  - Keywords: 3D Bounding Boxes, 3D-BoxSup, Brain Tumor Segmentation.
+  - Application: Brain tumor segmentation.
+  - <details><summary>Digest</summary> In this paper, we have proposed a method that achieves competitive accuracy from a “weakly annotated” image where the weak annotation is obtained via a 3D bounding box denoting an object of interest. Our method, called “3D-BoxSup,” employs a positive-unlabeled learning framework to learn segmentation masks from 3D bounding boxes. Specially, we consider the pixels outside of the bounding box as positively labeled data and the pixels inside the bounding box as unlabeled data. Our method can suppress the negative effects of pixels residing between the true segmentation mask and the 3D bounding box and produce accurate segmentation masks. We applied our method to segment a brain tumor. 
+  
+- Negative-Unlabeled Learning for Diffusion MRI. [[paper]](https://vision.cs.tum.edu/_media/spezial/bib/swazinna-et-al-ismrm2019.pdf)
+  - Phillip Swazinna, Vladimir Golkov, Ilona Lipp, Eleonora Sgarlata, Valentina Tomassini, Derek K. Jones, and Daniel Cremers. ISMRM 2019.
+  - Keywords: Negative-Unlabeled Learning.
+  - Application: MRI.
+  - <details><summary>Digest</summary> Machine learning strongly enhances diffusion MRI in terms of acquisition speed and quality of results. Different machine learning tasks are applicable in different situations: labels for training might be available only for healthy data or only for common but not rare diseases; training labels might be available voxel-wise, or only scan-wise. This leads to various tasks beyond supervised learning. Here we examine whether it is possible to perform accurate voxel-wise MS lesion detection if only scan-wise training labels are used.
+
+  
+- Deep positive-unlabeled learning for region of interest localization in breast tissue images.[[paper]](https://doi.org/10.1117/12.2293721)
+  - Pushpak Pati, Sonali Andani, Matthew Pediaditis, Matheus Palhares Viana, Jan Hendrik Rüschoff, Peter Wild, Maria Gabrani. IPMI 2018.
+  - Keywords: tumor-region-of-interest (TRoI), breast tissue images, high-power-fields (HPFs).
+  - Application: detection of tumor-region-of-interest (TRoI) on WSIs of breast tissue.
+  - <details><summary>Digest</summary> In this work, we propose a positive and unlabeled learning approach that uses a few examples of HPF regions (positive annotations) to localize the invasive TRoIs on breast cancer WSIs. We use unsupervised deep autoencoders with Gaussian Mixture Model-based clustering to identify the TRoI in a patch-wise manner. The algorithm is developed using 90 HPF-annotated WSIs and is validated on 30 fully-annotated WSIs.
+  
+- Learning from Only Positive and Unlabeled Data to Detect Lesions in Vascular CT Images.[[paper]](https://link.springer.com/content/pdf/10.1007/978-3-642-23626-6.pdf?pdf=button)
+  - Maria A. Zuluaga, Don Hush, Edgar J. F. Delgado Leyton, Marcela Hernández Hoyos & Maciej Orkisz. MICCAI 2011.
+  - Keywords: Support Vector Machine, Synthetic Data, True Positive Rate, Unlabeled Data, Empirical Risk.
+  - <details><summary>Digest</summary> While most existing solutions tackle calcified and non-calcified plaques separately, we present a new algorithm capable of detecting both types of lesions in CT images. It builds up on a semi-supervised classification framework, in which the training set is made of both unlabeled data and a small amount of data labeled as normal. Our method takes advantage of the arrival of newly acquired data to re-train the classifier and improve its performance. 
+  
+  
+  
