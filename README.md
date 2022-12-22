@@ -1,5 +1,5 @@
 # PU Learning Paper List
-This is a repository for PU-learning-based surveys, top ML conference papers and applications in medical imaging analysis.
+This is a repository for PU-learning-based surveys, top ML conference & journal papers and applications in medical imaging analysis.
 
 # Table of Contents
 - PU-Learning Paper List
@@ -31,7 +31,7 @@ This is a repository for PU-learning-based surveys, top ML conference papers and
   
 
 
-## ML Conference/Journal Paper
+## ML Conference & Journal Paper
  
 - Dist-PU: Positive-Unlabeled Learning From a Label Distribution Perspective.[[paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_Dist-PU_Positive-Unlabeled_Learning_From_a_Label_Distribution_Perspective_CVPR_2022_paper.pdf)
   - Yunrui Zhao, Qianqian Xu, Yangbangyan Jiang, Peisong Wen, Qingming Huang. CVPR 2022.
